@@ -1,0 +1,1093 @@
+{% load static %}
+<!DOCTYPE html>
+<!--  This site was created in Webflow. http://www.webflow.com  -->
+<!--  Last Published: Tue Mar 24 2020 14:41:14 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="5e79cb7df4bbb714b59c9c85" data-wf-site="5e79ca6663cc8b82945506ed">
+<head>
+  <meta charset="utf-8">
+  <title>Lexprice | Новый счет</title>
+  <meta content="Создать новый счет" name="description">
+  <meta content="Создать новый счет" property="og:title">
+  <meta content="Создать новый счет" property="og:description">
+  <meta content="summary" name="twitter:card">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="{% static 'css/normalize.css' %}" rel="stylesheet" type="text/css">
+  <link href="{% static 'css/components.css' %}" rel="stylesheet" type="text/css">
+  <link href="{% static 'css/jurprice.css' %}" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic"]  }});</script>
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="{% static 'images/favicon.png' %}" rel="shortcut icon" type="image/x-icon">
+  <link href="{% static 'images/webclip.png' %}" rel="apple-touch-icon">
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript" >
+     (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+     m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+     (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+     ym(65407870, "init", {
+          clickmap:true,
+          trackLinks:true,
+          accurateTrackBounce:true,
+          webvisor:true
+     });
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/65407870" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+</head>
+<body style="background-color:#f7f7f7">
+  <div id="alert" class="download-app" style="display:none"><a data-w-id="af647921-f5bf-e231-0705-1eeab1aac8b5" href="#" class="button-2 w-button"></a>
+    <h1 class="heading-2">Lexprice</h1><img src="https://uploads-ssl.webflow.com/5d402560a2938fab37b1d4b0/5d4043e8eee5234cc5fa5bfd_Frame%20(1).svg" alt="" class="image-6">
+    <h1 class="heading-3">Longlat, LLC.</h1><img src="images/Gro21up-1-1.png" srcset="{% static 'images/Gro21up-1-1-p-500.png' %} 500w, {% static 'images/Gro21up-1-1-p-800.png' %} 800w, {% static 'images/Gro21up-1-1.png' %} 1024w" sizes="(max-width: 479px) 36vw, (max-width: 767px) 150px, 100vw" alt="" class="image">
+    <h1 class="heading">Удобнее в приложении!</h1>
+    <h1 class="heading-4">Сервис для формирования и выставления счетов за юридические услуги.</h1>
+    <div class="div-block"><a href="#" class="link-block-2 w-inline-block"><img src="images/Available-on-the-app-store-badge.png" srcset="{% static 'images/Available-on-the-app-store-badge-p-500.png' %} 500w, {% static 'images/Available-on-the-app-store-badge-p-800.png' %} 800w, {% static 'images/Available-on-the-app-store-badge.png' %} 1000w" sizes="100vw" alt="" class="image-3"></a></div>
+  </div>
+  <div data-collapse="all" data-animation="default" data-duration="400" data-doc-height="1" data-no-scroll="1" class="navbar-2 fixed w-nav">
+    <div class="wrapper navbar">
+      <a href="/" data-w-id="ed492581-56a3-5168-5bd1-dd626d4587e7" class="logo rel w-inline-block"><img src="{% static 'images/Group-8.svg' %}" width="60" alt="" class="logo-navbar white"></a>
+      <!-- <nav role="navigation" class="nav-menu-container w-nav-menu">
+        <a href="/logout" class="nav-link-5 w-nav-link">Выход</a>
+      </nav> -->
+      <!-- <div class="navbar-links-container w-hidden-medium w-hidden-small w-hidden-tiny">
+        <a href="/logout" data-w-id="ed492581-56a3-5168-5bd1-dd626d458823" class="nav-link-4 cta">Выход</a></div> -->
+      <div class="menu-button-3 w-hidden-main w-nav-button">
+        <div class="white-burger w-icon-nav-menu"></div>
+      </div>
+    </div>
+    <div data-w-id="ed492581-56a3-5168-5bd1-dd626d458827" class="dropdown-container w-hidden-medium w-hidden-small w-hidden-tiny">
+      <div class="wrapper components">
+        <div class="components-list-container w-clearfix">
+          <div class="col lg-3 no-padding sm-2">
+            <a href="#" class="page-preview-link w-inline-block">
+              <div class="nav-link-with-icon-containr"><img src="https://uploads-ssl.webflow.com/5dd7d7b03f3c693650620022/5dd7d7b03f3c696f616200c2_header.svg" alt="" class="menu-icon">
+                <div class="text-block">Navbars</div>
+              </div>
+            </a>
+          </div>
+          <div class="col lg-3 no-padding sm-2">
+            <a href="#" class="page-preview-link w-inline-block">
+              <div class="nav-link-with-icon-containr"><img src="https://uploads-ssl.webflow.com/5dd7d7b03f3c693650620022/5dd7d7b03f3c6925316200cb_footer.svg" alt="" class="menu-icon">
+                <div class="text-block">Footers</div>
+              </div>
+            </a>
+          </div>
+          <div class="col lg-3 no-padding sm-2">
+            <a href="#" class="page-preview-link w-inline-block">
+              <div class="nav-link-with-icon-containr"><img src="https://uploads-ssl.webflow.com/5dd7d7b03f3c693650620022/5dd7d7b03f3c6900406200d9_headers.svg" alt="" class="menu-icon">
+                <div class="text-block">Features</div>
+              </div>
+            </a>
+          </div>
+          <div class="col lg-3 no-padding sm-2">
+            <a href="#" class="page-preview-link w-inline-block">
+              <div class="nav-link-with-icon-containr"><img src="https://uploads-ssl.webflow.com/5dd7d7b03f3c693650620022/5dd7d7b03f3c6922486200c6_star.svg" alt="" class="menu-icon">
+                <div class="text-block">Value propositions</div>
+              </div>
+            </a>
+          </div>
+          <div class="col lg-3 no-padding sm-2">
+            <a href="#" class="page-preview-link w-inline-block">
+              <div class="nav-link-with-icon-containr"><img src="https://uploads-ssl.webflow.com/5dd7d7b03f3c693650620022/5dd7d7b03f3c695fe46200bb_blog.svg" alt="" class="menu-icon">
+                <div class="text-block">Blog</div>
+              </div>
+            </a>
+          </div>
+          <div class="col lg-3 no-padding sm-2">
+            <a href="#" class="page-preview-link w-inline-block">
+              <div class="nav-link-with-icon-containr"><img src="https://uploads-ssl.webflow.com/5dd7d7b03f3c693650620022/5dd7d7b03f3c69c3256200c3_money.svg" alt="" class="menu-icon">
+                <div class="text-block">Pricing tables</div>
+              </div>
+            </a>
+          </div>
+          <div class="col lg-3 no-padding sm-2">
+            <a href="#" class="page-preview-link w-inline-block">
+              <div class="nav-link-with-icon-containr"><img src="https://uploads-ssl.webflow.com/5dd7d7b03f3c693650620022/5dd7d7b03f3c69f67b6200f7_testimonial.svg" alt="" class="menu-icon">
+                <div class="text-block">Testimonials</div>
+              </div>
+            </a>
+          </div>
+          <div class="col lg-3 no-padding sm-2">
+            <a href="#" class="page-preview-link w-inline-block">
+              <div class="nav-link-with-icon-containr"><img src="https://uploads-ssl.webflow.com/5dd7d7b03f3c693650620022/5dd7d7b03f3c697f026200df_form.svg" alt="" class="menu-icon">
+                <div class="text-block">Headers</div>
+              </div>
+            </a>
+          </div>
+          <div class="col lg-3 no-padding sm-2">
+            <a href="#" class="page-preview-link w-inline-block">
+              <div class="nav-link-with-icon-containr"><img src="https://uploads-ssl.webflow.com/5dd7d7b03f3c693650620022/5dd7d7b03f3c693f216200c8_cta2.svg" alt="" class="menu-icon">
+                <div class="text-block">CTAs</div>
+              </div>
+            </a>
+          </div>
+          <div class="col lg-3 no-padding sm-2">
+            <a href="#" class="page-preview-link w-inline-block">
+              <div class="nav-link-with-icon-containr"><img src="https://uploads-ssl.webflow.com/5dd7d7b03f3c693650620022/5dd7d7b03f3c69978b6200e5_Q%26A.svg" alt="" class="menu-icon">
+                <div class="text-block">FAQs</div>
+              </div>
+            </a>
+          </div>
+          <div class="col lg-3 no-padding sm-2">
+            <a href="#" class="page-preview-link w-inline-block">
+              <div class="nav-link-with-icon-containr"><img src="https://uploads-ssl.webflow.com/5dd7d7b03f3c693650620022/5dd7d7b03f3c69bd496200e4_gallery.svg" alt="" class="menu-icon">
+                <div class="text-block">Galleries</div>
+              </div>
+            </a>
+          </div>
+          <div class="col lg-3 no-padding sm-2">
+            <a href="#" class="page-preview-link w-inline-block">
+              <div class="nav-link-with-icon-containr"><img src="https://uploads-ssl.webflow.com/5dd7d7b03f3c693650620022/5dd7d7b03f3c69424f6200eb_team.svg" alt="" class="menu-icon">
+                <div class="text-block">Team</div>
+              </div>
+            </a>
+          </div>
+          <div class="col lg-3 no-padding sm-2">
+            <a href="#" class="page-preview-link w-inline-block">
+              <div class="nav-link-with-icon-containr"><img src="https://uploads-ssl.webflow.com/5dd7d7b03f3c693650620022/5dd7d7b03f3c691c77620157_works.svg" alt="" class="menu-icon">
+                <div class="text-block">Portfolio</div>
+              </div>
+            </a>
+          </div>
+          <div class="col lg-3 no-padding sm-2">
+            <a href="#" class="page-preview-link w-inline-block">
+              <div class="nav-link-with-icon-containr"><img src="https://uploads-ssl.webflow.com/5dd7d7b03f3c693650620022/5dd7d7b03f3c694b0e620192_how%20it%20works.svg" width="24" alt="" class="menu-icon">
+                <div class="text-block">How it works</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div data-w-id="ed492581-56a3-5168-5bd1-dd626d45887e" class="dropdown-container w-hidden-medium w-hidden-small w-hidden-tiny">
+      <div class="wrapper components">
+        <div class="components-list-container _2 w-clearfix">
+          <div class="col lg-3 no-padding sm-2">
+            <a href="#" class="page-preview-link w-inline-block">
+              <div class="nav-link-with-icon-containr"><img src="https://uploads-ssl.webflow.com/5dd7d7b03f3c693650620022/5dd7d7b03f3c6901f16200fe_Feedback.svg" alt="" class="menu-icon">
+                <div class="text-block">About</div>
+              </div>
+            </a>
+          </div>
+          <div class="col lg-3 no-padding sm-2">
+            <a href="#" class="page-preview-link w-inline-block">
+              <div class="nav-link-with-icon-containr"><img src="https://uploads-ssl.webflow.com/5dd7d7b03f3c693650620022/5dd7d7b03f3c69313e620104_file.svg" alt="" class="menu-icon">
+                <div class="text-block">How to use</div>
+              </div>
+            </a>
+          </div>
+          <div class="col lg-3 no-padding sm-2">
+            <a href="#" class="page-preview-link w-inline-block">
+              <div class="nav-link-with-icon-containr"><img src="https://uploads-ssl.webflow.com/5dd7d7b03f3c693650620022/5dd7d7b03f3c6929e06200d1_styleguide.svg" alt="" class="menu-icon">
+                <div class="text-block">Styleguide</div>
+              </div>
+            </a>
+          </div>
+          <div class="col lg-3 no-padding sm-2">
+            <a href="https://www.paypal.me/dariostefanutto" target="_blank" class="page-preview-link w-inline-block">
+              <div class="nav-link-with-icon-containr"><img src="https://uploads-ssl.webflow.com/5dd7d7b03f3c693650620022/5dd7d7b03f3c692856620197_dollar.svg" alt="" class="menu-icon">
+                <div class="text-block">Donate</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="confirm-delete">
+    <div class="form-container">
+      <div class="div-block-8"><a data-w-id="d92d7510-9886-c7e6-5710-24c6545397a0" href="#" class="close-popup delete w-button"></a>
+        <h2 class="form-headline">Внимание</h2>
+      </div>
+      <h1 class="heading-18 black">Чтобы продолжить, пожалуйста, заполните банковские реквизиты.</h1>
+      <div class="div-block-636 center"><a data-w-id="d92d7510-9886-c7e6-5710-24c6545397a6" href="#" class="button-12 blue w-button">OK</a></div>
+    </div><a data-w-id="d92d7510-9886-c7e6-5710-24c6545397a8" href="#" class="close-popup delete background w-button"></a></div>
+  <div class="login-page-wrapper">
+    <div class="login-container-2 w-form">
+      <div class="login-container-2"></div>
+      <form id="sign-up" name="wf-form-Sign-up-Form" data-name="Sign up Form" method="post" ms-login="true" class="memberstack-form">
+        <div class="accordion-item">
+          <div class="accordion-item-trigger">
+            <div class="icon-2 accordion-icon">&gt;</div>
+            <h1 class="heading-122">Банковские реквизиты</h1>
+          </div>
+          <div class="accordion-item-content">
+            <div class="form-wrapper client-info bank">
+              <div class="div-block-673 _1st"><input type="text" maxlength="256" id="bd_receiver" placeholder="Получатель" ms-field="email" class="signup-field-2 _50 w-input">
+                <input type="text" maxlength="256" id="bd_bic" placeholder="БИК" ms-field="email" class="signup-field-2 _50 w-input"></div>
+
+              <div class="div-block-673"><input type="text" maxlength="256" id="bd_bank_receiver" placeholder="Банк получателя" ms-field="email" class="signup-field-2 _50 w-input">
+                <input type="text" maxlength="256" id="bd_check_account" placeholder="Р/с" ms-field="email" class="signup-field-2 _50 w-input"></div>
+              <div class="div-block-673 left-align"><input type="text" maxlength="256" id="bd_tin" placeholder="ИНН" ms-field="email" class="signup-field-2 _50 w-input">
+                <input type="text" maxlength="256" id="bd_iec" placeholder="КПП" ms-field="email" class="signup-field-2 _50 w-input">
+              </div>
+
+                <div class="div-block-673 left-align">
+                  <input type="text" maxlength="256" id="bd_purpose_of_payment" placeholder="Назначение платежа" ms-field="email" class="signup-field-2 _50 w-input">
+                  <input type="number" maxlength="256" id="bd_cor_account" placeholder="К/с" ms-field="email" class="signup-field-2 _50 w-input"></div>
+                  <div class="div-block-673 _1st">
+                    <h5 class="heading-124">*  Заполнение полей банковских реквизитов необязательно, информация удаляется сразу после формирования счета и не хранится в системе</h5>
+                  </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="form-wrapper client-info">
+          <h1 class="heading-122">Информация о клиенте</h1>
+          <div class="div-block-673 _100"><input id="client_name" type="text" maxlength="256" required="" placeholder="Наименование или ФИО (обязательное)" ms-field="email" class="signup-field-2 _50 w-input"><input type="text" maxlength="256" required="" id="client_itn" placeholder="ИНН (обязательное)" ms-field="email" class="signup-field-2 _50 w-input"></div>
+        </div>
+        <div class="div-block-670">
+          <div class="div-block-674">
+            <h1 class="heading-122">Основная категория</h1>
+            <select id="categories_list" name="field" class="select-field _12 w-select" style="width:300">
+            </select>
+            <a href="#" onclick="select_categories(this.text)" class="button add desk w-button">Добавить основную категорию</a>
+            <a href="#" onclick="select_categories(this.text)" class="button add mob w-button">Доб. осн. категорию</a></div>
+          <div class="div-block-674">
+            <h1 class="heading-122 desk">Дополнительная категория</h1>
+            <h1 class="heading-122 mob">Доп.категория</h1><select id="categories_list_dopol" name="field-2" data-name="Field 2" class="select-field _12 w-select">
+            </select><a href="#" onclick="select_categories()" class="button add mob w-button">Доб. доп. категорию</a><a href="#" onclick="select_categories()" class="button add desk w-button">Добавить дополнительную категорию</a></div>
+        </div>
+        <h1 class="heading-122 _20">Услуги</h1>
+        <div class="div-block-673 _2nd"  id="blank_alert">
+          <h5 class="heading-124">Пожалуйста, добавьте услуги вручную или выберите категорию</h5>
+        </div>
+        <div class="form-wrapper" id="form-wrapper">
+          <!-- <div class="divchik">
+            <div class="div-block-676">
+              <div class="div-block-671 number"><label for="password" class="signup-label"><strong class="bold-text-4">№</strong></label><input type="text" class="signup-field-2 _14 locked w-input" maxlength="256" name="password-2" data-name="Password 2" ms-field="password" id="password-2" required=""></div>
+              <div class="div-block-671 vid"><label for="password-3" class="signup-label"><strong class="bold-text-4">Вид</strong></label><select id="field-3" name="field-3" data-name="Field 3" class="select-field spec w-select"><option value="">Select one...</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
+            </div>
+            <div class="div-block-677">
+              <div class="div-block-671 spec"><label for="password-3" class="signup-label"><strong class="bold-text-4">Cпециалист</strong></label><select id="field-3" name="field-3" data-name="Field 3" class="select-field spec w-select"><option value="">Select one...</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
+              <div class="div-block-671 stavka"><label for="password-3" class="signup-label"><strong class="bold-text-4">Ставка</strong></label><input type="text" class="signup-field-2 _14 w-input" maxlength="256" name="password-2" data-name="Password 2" ms-field="password" id="password-2" required=""></div>
+            </div>
+            <div class="div-block-678">
+              <div class="div-block-671"><label for="password-3" class="signup-label"><strong class="bold-text-4">Часы</strong></label><input type="text" class="signup-field-2 _14 w-input" maxlength="256" name="password-2" data-name="Password 2" ms-field="password" id="password-2" required=""></div>
+              <div class="div-block-671"><label for="password-3" class="signup-label"><strong class="bold-text-4">Количество</strong></label><input type="text" class="signup-field-2 _14 w-input" maxlength="256" name="password-2" data-name="Password 2" ms-field="password" id="password-2" required=""></div>
+              <div class="div-block-671"><label for="password-3" class="signup-label"><strong class="bold-text-4">Стоимость</strong></label><input type="text" class="signup-field-2 _14 locked w-input" maxlength="256" name="password-2" data-name="Password 2" ms-field="password" id="password-2" required=""></div>
+            </div>
+            <div class="div-block-675"><a href="#" class="func down w-button"></a><a href="#" class="func up w-button"></a><a href="#" class="func delete w-button"></a></div>
+          </div> -->
+          <!-- <div class="divchik">
+            <div class="div-block-676">
+              <div class="div-block-671 number"><label for="password-3" class="signup-label"><strong class="bold-text-4">№</strong></label><input type="text" class="signup-field-2 _14 locked w-input" maxlength="256" name="password-2" data-name="Password 2" ms-field="password" id="password-2" required=""></div>
+              <div class="div-block-671 vid"><label for="password-3" class="signup-label"><strong class="bold-text-4">Вид</strong></label><select id="field-3" name="field-3" data-name="Field 3" class="select-field spec w-select"><option value="">Select one...</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
+            </div>
+            <div class="div-block-677">
+              <div class="div-block-671 spec"><label for="password-3" class="signup-label"><strong class="bold-text-4">Cпециалист</strong></label><select id="field-3" name="field-3" data-name="Field 3" class="select-field spec w-select"><option value="">Select one...</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
+              <div class="div-block-671 stavka"><label for="password-3" class="signup-label"><strong class="bold-text-4">Ставка</strong></label><input type="text" class="signup-field-2 _14 w-input" maxlength="256" name="password-2" data-name="Password 2" ms-field="password" id="password-2" required=""></div>
+            </div>
+            <div class="div-block-678">
+              <div class="div-block-671"><label for="password-3" class="signup-label"><strong class="bold-text-4">Часы</strong></label><input type="text" class="signup-field-2 _14 w-input" maxlength="256" name="password-2" data-name="Password 2" ms-field="password" id="password-2" required=""></div>
+              <div class="div-block-671"><label for="password-3" class="signup-label"><strong class="bold-text-4">Количество</strong></label><input type="text" class="signup-field-2 _14 w-input" maxlength="256" name="password-2" data-name="Password 2" ms-field="password" id="password-2" required=""></div>
+              <div class="div-block-671"><label for="password-3" class="signup-label"><strong class="bold-text-4">Стоимость</strong></label><input type="text" class="signup-field-2 _14 locked w-input" maxlength="256" name="password-2" data-name="Password 2" ms-field="password" id="password-2" required=""></div>
+            </div>
+            <div class="div-block-675"><a href="#" class="func down w-button"></a><a href="#" class="func up w-button"></a><a href="#" class="func delete w-button"></a></div>
+          </div> -->
+          <!-- <div class="divchik">
+            <div class="div-block-676">
+              <div class="div-block-671 number"><label for="password-3" class="signup-label"><strong class="bold-text-4">№</strong></label><input type="text" class="signup-field-2 _14 locked w-input" maxlength="256" name="password-2" data-name="Password 2" ms-field="password" id="password-2" required=""></div>
+              <div class="div-block-671 vid"><label for="password-3" class="signup-label"><strong class="bold-text-4">Вид</strong></label><select id="field-3" name="field-3" data-name="Field 3" class="select-field spec w-select"><option value="">Select one...</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
+            </div>
+            <div class="div-block-677">
+              <div class="div-block-671 spec"><label for="password-3" class="signup-label"><strong class="bold-text-4">Cпециалист</strong></label><select id="field-3" name="field-3" data-name="Field 3" class="select-field spec w-select"><option value="">Select one...</option><option value="First">First Choice</option><option value="Second">Second Choice</option><option value="Third">Third Choice</option></select></div>
+              <div class="div-block-671 stavka"><label for="password-3" class="signup-label"><strong class="bold-text-4">Ставка</strong></label><input type="text" class="signup-field-2 _14 w-input" maxlength="256" name="password-2" data-name="Password 2" ms-field="password" id="password-2" required=""></div>
+            </div>
+            <div class="div-block-678">
+              <div class="div-block-671"><label for="password-3" class="signup-label"><strong class="bold-text-4">Часы</strong></label><input type="text" class="signup-field-2 _14 w-input" maxlength="256" name="password-2" data-name="Password 2" ms-field="password" id="password-2" required=""></div>
+              <div class="div-block-671"><label for="password-3" class="signup-label"><strong class="bold-text-4">Количество</strong></label><input type="text" class="signup-field-2 _14 w-input" maxlength="256" name="password-2" data-name="Password 2" ms-field="password" id="password-2" required=""></div>
+              <div class="div-block-671"><label for="password-3" class="signup-label"><strong class="bold-text-4">Стоимость</strong></label><input type="text" class="signup-field-2 _14 locked w-input" maxlength="256" name="password-2" data-name="Password 2" ms-field="password" id="password-2" required=""></div>
+            </div>
+            <div class="div-block-675"><a href="#" class="func down w-button"></a><a href="#" class="func up w-button"></a><a href="#" class="func delete w-button"></a></div>
+          </div> -->
+        </div>
+        <div class="div-block-672"><a href="#" id="clear_list" style="display:none" onclick="delete_works()" class="button clear w-button">Очистить список</a>
+          <a onclick="create_uslug()" href="#" class="button add w-button">Добавить услугу</a></div>
+        <div class="div-block-681"><a href="#" onclick="create_dop_uslug()" class="button add small w-button">Добавить иную услугу</a></div>
+        <h1 class="heading-122 _20">Скидка / Наценка</h1>
+        <div class="div-block-670 _2">
+          <div class="div-block-674"><label for="node" class="signup-label"><strong class="bold-text-4">Значение</strong></label><input value='0' id="znach" type="text" maxlength="256" required="" ms-field="email" class="signup-field-2 _100 w-input"></div>
+          <div class="div-block-674"><label for="node" class="signup-label"><strong class="bold-text-4">Тип наценки</strong></label>
+            <select id="nazenka" name="field-4" data-name="Field 4" class="select-field w-select">
+              <option value="Фиксированная">Фиксированная</option>
+              <option value="Скидка %">Скидка %</option>
+              <option value="Наценка %">Наценка %</option>
+            </select></div>
+        </div>
+        <h1 class="heading-122 _20">Информация для плательщика</h1>
+        <div class="div-block-670 _2"><textarea placeholder="Сумма в счете указана без НДС. Юридические услуги по настоящему счету НДС не облагаются. Оплата данного счета признается акцептом на заключение договора на оказание юридических услуг по перечисленным выше услугам." maxlength="5000" id="payer_info" name="field-5" class="textarea w-input"></textarea></div>
+        <h1 class="heading-122 _20">Подписант</h1>
+        <div class="div-block-670 _2">
+          <div class="div-block-674 _100"><input type="text" maxlength="256" id="bd_signing" required="" placeholder="ФИО" ms-field="email" class="signup-field-2 _100 w-input"></div>
+        </div>
+        <h1 class="heading-122 _20">Итого</h1>
+        <!-- <div class="div-block-679">
+          <h1 class="heading-122 _20 price">Внутренний счет</h1>
+          <h1 class="heading-122 _20 price" id='full_rate'></h1>
+        </div> -->
+        <div class="div-block-679">
+          <h1 class="heading-122 _20 price">Суммарный счет</h1>
+          <h1 class="heading-122 _20 price" id="nazenka_rate">0 ₽</h1>
+        </div>
+        <div class="div-block-680">
+          <div><label class="w-checkbox checkbox-field"><input type="checkbox" id="confirm" required="" name="checkbox" data-name="Checkbox" class="w-checkbox-input checkbox"><span class="checkbox-label w-form-label">Я согласен с <a href="{% static '/Lexprice_Лицензионное_+_Конфиденциальность.pdf' %}" target='blank' class="link">Пользовательским соглашением</a></span>
+          </label></div>
+          <!-- <input type="submit" value="Сформировать договор" data-wait="Please wait..." class="login-button-2 w-button"> -->
+
+        </div>
+        <div><input type="submit" onclick="create_pdf()" value="Сформировать счёт" data-wait="Please wait..." class="login-button-2 w-button">
+          <div class="div-block-673 error" style="display:none" id="empty_works_error"><img src="{% static 'images/Vector-6.svg' %}" loading="lazy" alt="" class="image-55">
+            <h5 class="heading-124 red">Пожалуйста, добавьте услуги для формирования счета</h5>
+          </div>
+        </div>
+      </form>
+
+    </div>
+    <a href="#" onclick="reload_page()"class="button-13 w-button">Сбросить (полная очистка данных)</a>
+  </div>
+
+  <div class="section">
+    <div class="div-block-5">
+      <div class="legal-text"><a href="https://law-kazan.ru/" target="_blank" class="link-2">© 2020 Все права принадлежат ООО «СтройКапиталКонсалтинг»</a> <br><a href="https://longlat.ru" target="_blank" class="link-2">Разработано и поддерживается OOO «Лонглат»</a></div>
+      <a target='blank' href="{% static '/Lexprice_Лицензионное_+_Конфиденциальность.pdf' %}" class="footer-link lower">Пользовательское соглашение</a>
+      <!-- <a href="#" class="footer-link lower">Условия пользования сервисом</a> -->
+    </div>
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js?site=5e79ca6663cc8b82945506ed" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="{% static 'js/jurprice.js' %}" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+  <script>
+  class Categories {
+    constructor(categories, works, specialists, rate=0) {
+      this.categories = categories;
+      this.works = works;
+      this.specialists = specialists
+      this.rate = rate
+      this.y = 1
+      this.id = 1
+      this.full_rate = 0
+    }
+  }
+
+  window.addEventListener('load', function() {
+      console.log('All assets are loaded')
+      categories = get_categorys();
+      works = get_works();
+      specialists = get_specialists();
+      var nazen = document.getElementById('znach');
+      var nazenk = document.getElementById('nazenka');
+      var delete_e = document.getElementById('delete_element');
+      var ios = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+      console.log(ios);
+      check_browser(ios)
+      storage_inputs();
+      get_storage()
+      //delete_e.addEventListener('click', change_number)
+      nazen.addEventListener('keyup', nazenka)
+      nazenk.addEventListener('click', nazenka)
+      categories_obj = new Categories(categories, works, specialists)
+
+  })
+   function check_browser(ios) {
+     if (ios==true) {
+     let alert_browser = document.getElementById('alert')
+     alert_browser.style.display = 'flex'
+   }
+   }
+  function get_categorys() {
+    var categories;
+    $.ajax({
+        url: '/api/v1/categories',
+        type: 'GET',
+        async: false,
+
+        success: function (data) {
+
+            fill_categorys(data);
+            categories = data.categories
+            return(data.categories)
+        },
+        error: function (req, status, error) {
+        var msg = '';
+        console.log('ошибка');
+    },
+    })
+
+   return categories
+  }
+  function get_works() {
+    var works;
+    $.ajax({
+        url: '/api/v1/services',
+        type: 'GET',
+        async: false,
+        success: function (data) {
+
+            works = data.services
+            return(data.works)
+        },
+        error: function (req, status, error) {
+        var msg = '';
+        console.log('ошибка');
+    },
+    })
+
+    return works
+
+  }
+  function get_specialists() {
+    var specialists;
+    $.ajax({
+        url: '/api/v1/specialists',
+        type: 'GET',
+        async: false,
+        success: function (data) {
+            specialists = data.specialists
+            return(data.specialists)
+        },
+        error: function (req, status, error) {
+        var msg = '';
+        console.log('ошибка');
+    },
+    })
+    return specialists
+
+  }
+  function fill_categorys(data) {
+    let options = []
+    var a = data.categories
+    var sel = document.getElementById('categories_list');
+    var sel2 = document.getElementById('categories_list_dopol');
+    a.forEach(function(e) {
+      var opt = document.createElement('option');
+      opt.innerHTML = e.name;
+      opt.value = e.name;
+      opt.id= e.id
+      if (e.isOriginal === true) {
+      sel.appendChild(opt);
+    }
+    else {
+      sel2.appendChild(opt)
+    }
+    })
+    //document.getElementById('categories_list').innerHTML = options;
+  }
+  function fill_works(id, name, y) {
+    work_list = []
+    var sel = document.getElementById(id);
+    categories_obj.works.forEach(function(e){
+      if (work_list.includes(e.name)) {
+        //console.log(e.name);
+ }
+      else {
+        var opt = document.createElement('option');
+        opt.innerHTML = e.name;
+        opt.value = e.name;
+        opt.id= e.id
+        sel.appendChild(opt)
+        work_list.push(e.name);
+      }
+    })
+    sel.value = name
+    work_list = []
+  }
+  function fill_specialist(id, name) {
+    var sel = document.getElementById(id);
+    categories_obj.specialists.forEach(function(e){
+      var opt = document.createElement('option');
+      opt.innerHTML = e.name;
+      opt.value = e.name;
+      opt.id= e.id
+      sel.appendChild(opt);
+    })
+    sel.value = name
+
+  }
+  function select_categories(status) {
+    if (status == 'Добавить основную категорию'){
+    var t = document.getElementById("categories_list");
+    }
+    else {
+      var t = document.getElementById("categories_list_dopol");
+    }
+    var strUser = t.options[t.selectedIndex].id;
+    let works = []
+    categories_obj.categories.forEach(function(e){
+      if(e.id == strUser) {
+        categories_obj.works.forEach(function(s){
+          //console.log(e.services)
+          //console.log(s)
+
+          if (e.services.includes(s.id)) {
+            works.push(s)
+
+          }
+        })
+        create_work_element(works);
+      }
+    })
+    document.getElementById('blank_alert').style.display = 'none'
+    document.getElementById('clear_list').style.display = 'flex'
+  }
+  function rate_price() {
+    full_rate = 0;
+    let rate = document.getElementsByName("rate");
+    let rate_elemenemt = document.getElementById("full_rate");
+    rate.forEach(function(e) {
+      full_rate = full_rate + parseInt(e.value)
+    })
+    //rate_elemenemt.innerHTML = full_rate + ' ₽'
+    categories_obj.full_rate = full_rate
+  }
+  function change_rate() {
+    let divchics = document.getElementsByClassName("divchik");
+    let full = 0;
+
+    //console.log(divchics)
+    for (let i of divchics) {
+      stavka = i.getElementsByClassName('div-block-677')[0].getElementsByClassName('div-block-671 stavka')[0].getElementsByClassName('signup-field-2 _14 w-input')[0].value
+      hours = time_to_float(i.getElementsByClassName('div-block-678')[0].getElementsByClassName('div-block-671')[0].getElementsByClassName('signup-field-2 _14 w-input')[0].value)
+      count = i.getElementsByClassName('div-block-678')[0].getElementsByClassName('div-block-671')[1].getElementsByClassName('signup-field-2 _14 w-input')[0].value
+      rate_elemenemt = i.getElementsByClassName('div-block-678')[0].getElementsByClassName('div-block-671')[2].getElementsByClassName('signup-field-2 _14 locked w-input')[0]
+      let lock_value = rate_elemenemt.value
+      full = parseInt(stavka) * parseInt(count) * parseFloat(hours)
+      if (isNaN(parseInt(full))) {
+        rate_elemenemt.value = lock_value
+      }
+      else {
+        rate_elemenemt.value = Number(full.toFixed(1))
+      }
+
+    }
+    //console.log(full)
+    rate_price()
+  }
+  function rate_price_nazenka(znach) {
+    full_rate = 0;
+
+    let rate = categories_obj.full_rate
+    let rate_elemenemt = document.getElementById("nazenka_rate");
+    // rate.forEach(function(e) {
+    //   full_rate = full_rate + parseInt(e.value)
+    //   //console.log(full_rate)
+    //
+    // })
+
+    full_rate = rate + parseInt(znach)
+
+    if (isNaN(parseInt(znach))) {
+     if (isNaN(rate)) {
+       rate_elemenemt.innerHTML = ''
+     }
+     else {
+      rate_elemenemt.innerHTML = rate + ' ₽'}
+    }
+    else {
+      if (isNaN(full_rate)) {
+        rate_elemenemt.innerHTML = ''
+      }
+      else {
+      rate_elemenemt.innerHTML = full_rate + ' ₽'}
+    }
+    //rate_elemenemt.innerHTML = full_rate + ' ₽'
+  }
+  function nazenka() {
+    //console.log('d')
+    let nazenka_select = document.getElementById("nazenka").value;
+    let znach = document.getElementById("znach").value;
+    change_nazenka(nazenka_select, znach)
+  }
+  function change_nazenka(nazenka_select, znach) {
+    //console.log(nazenka_select)
+    if (nazenka_select == 'Фиксированная') {
+      // let divchics = document.getElementsByClassName("divchik");
+      // let full = 0;
+      // //console.log(divchics)
+      // for (let i of divchics) {
+      //   stavka = i.getElementsByClassName('div-block-677')[0].getElementsByClassName('div-block-671 stavka')[0].getElementsByClassName('signup-field-2 _14 w-input')[0].value
+      //   hours = i.getElementsByClassName('div-block-678')[0].getElementsByClassName('div-block-671')[0].getElementsByClassName('signup-field-2 _14 w-input')[0].value
+      //   count = i.getElementsByClassName('div-block-678')[0].getElementsByClassName('div-block-671')[1].getElementsByClassName('signup-field-2 _14 w-input')[0].value
+      //   rate_elemenemt = i.getElementsByClassName('div-block-678')[0].getElementsByClassName('div-block-671')[2].getElementsByClassName('signup-field-2 _14 locked w-input')[0]
+      //
+      //   full = parseInt(stavka) * parseInt(count) * parseInt(hours) + parseInt(znach)
+      //   rate_elemenemt.value = full
+      // }
+      let o = znach
+      rate_price_nazenka(o);
+    }
+    else if (nazenka_select == 'Наценка %'){
+
+      let rate = categories_obj.full_rate
+      let percent = znach / 100
+      let rates = rate * percent
+      rate_price_nazenka(rates)
+    }
+    else if (nazenka_select == 'Скидка %'){
+      let rate = categories_obj.full_rate
+      let percent = znach / 100
+      let rates = rate * percent
+      rate_price_nazenka(pos_to_neg(rates))
+    }
+
+    function pos_to_neg(num)
+    {
+    return -Math.abs(num);
+    }
+  }
+  function delete_works() {
+    let divchics = document.getElementsByClassName("divchik");
+    for (var i = divchics.length - 1; i >= 0; --i) {
+      divchics[i].remove();
+    }
+    document.getElementById('blank_alert').style.display = 'flex'
+    document.getElementById('clear_list').style.display = 'none'
+    categories_obj.y = 1
+  }
+  function create_uslug() {
+    let work = [{'name': '', 'hours': 1, 'count': 1, 'id':categories_obj.id, 'specialist_type': {'rate': 0}}]
+    categories_obj.id = categories_obj.id + 1
+    create_work_element(work)
+    document.getElementById('blank_alert').style.display = 'none'
+    document.getElementById('clear_list').style.display = 'flex'
+  }
+  function set_storage(i) {
+    console.log(i);
+    sessionStorage.setItem(i.target.id, i.target.value);
+  }
+  function get_storage() {
+    document.getElementById("client_name").value = sessionStorage.getItem('client_name');
+    document.getElementById("client_itn").value = sessionStorage.getItem('client_itn');
+    document.getElementById("bd_receiver").value = sessionStorage.getItem('bd_receiver');
+    document.getElementById("bd_bank_receiver").value = sessionStorage.getItem('bd_bank_receiver');
+    document.getElementById("bd_tin").value = sessionStorage.getItem('bd_tin');
+    document.getElementById("bd_iec").value = sessionStorage.getItem('bd_iec');
+    document.getElementById("bd_purpose_of_payment").value = sessionStorage.getItem('bd_purpose_of_payment');
+    document.getElementById("bd_bic").value = sessionStorage.getItem('bd_bic');
+    document.getElementById("bd_check_account").value = sessionStorage.getItem('bd_check_account');
+    document.getElementById("bd_cor_account").value = sessionStorage.getItem('bd_cor_account');
+    document.getElementById("bd_signing").value = sessionStorage.getItem('bd_signing')
+  }
+  function storage_inputs() {
+    let client_name = document.getElementById("client_name");
+    let client_itn = document.getElementById("client_itn");
+    let bd_receiver = document.getElementById("bd_receiver");
+    let bd_bank_receiver = document.getElementById("bd_bank_receiver");
+    let bd_tin = document.getElementById("bd_tin");
+    let bd_iec = document.getElementById("bd_iec");
+    let bd_purpose_of_payment = document.getElementById("bd_purpose_of_payment");
+    let bd_bic = document.getElementById("bd_bic");
+    let bd_check_account = document.getElementById("bd_check_account");
+    let bd_cor_account = document.getElementById("bd_cor_account");
+    let bd_signing = document.getElementById("bd_signing");
+    client_name.addEventListener('keyup', set_storage)
+    client_itn.addEventListener('keyup', set_storage)
+    bd_receiver.addEventListener('keyup', set_storage)
+    bd_bank_receiver.addEventListener('keyup', set_storage)
+    bd_tin.addEventListener('keyup', set_storage)
+    bd_iec.addEventListener('keyup', set_storage)
+    bd_purpose_of_payment.addEventListener('keyup', set_storage)
+    bd_bic.addEventListener('keyup', set_storage)
+    bd_check_account.addEventListener('keyup', set_storage)
+    bd_cor_account.addEventListener('keyup', set_storage)
+    bd_signing.addEventListener('keyup', set_storage)
+  }
+  function create_pdf() {
+    let client_name = document.getElementById("client_name").value;
+    let client_itn = document.getElementById("client_itn").value;
+    let final_price = document.getElementById("nazenka_rate").innerHTML.replace(' ₽', '');
+    let bd_receiver = document.getElementById("bd_receiver").value;
+    let bd_bank_receiver = document.getElementById("bd_bank_receiver").value;
+    let bd_tin = document.getElementById("bd_tin").value;
+    let recalculation_value = final_price - categories_obj.full_rate
+    let bd_iec = document.getElementById("bd_iec").value;
+    let bd_purpose_of_payment = document.getElementById("bd_purpose_of_payment").value;
+    let bd_bic = document.getElementById("bd_bic").value;
+    let bd_check_account = document.getElementById("bd_check_account").value;
+    let bd_cor_account = document.getElementById("bd_cor_account").value;
+    let bd_signing = document.getElementById("bd_signing").value;
+    let payer_info = document.getElementById("payer_info").value;
+    let is_discount = false
+    let is_fixed = true
+    let nazenka_select = document.getElementById("nazenka").value;
+    if (nazenka_select == 'Фиксированная') {
+    is_fixed = true
+    let recalculation_value = final_price - categories_obj.full_rate}
+    else if (nazenka_select == 'Наценка %'){
+      is_fixed = false;
+      recalculation_value = document.getElementById('znach').value;
+    }
+    else if (nazenka_select == 'Скидка %') {
+      is_fixed = false;
+      is_discount = true;
+      recalculation_value = document.getElementById('znach').value;
+    }
+    if (document.getElementById('confirm').checked == false) {
+      document.getElementById('confirm').setCustomValidity('Примите пользовательское соглашение, чтобы продолжить')
+      return;
+    }
+    else {
+      document.getElementById('confirm').setCustomValidity('')
+    }
+
+    // let recalculation_value = document.getElementById("recalculation_value").value;
+    let works = get_select_works();
+    // if (bd_receiver == '' || bd_tin == '') {
+    //   alert('Заполните все поля')
+    //   return;
+    // }
+    if (works == '') {
+      document.getElementById('empty_works_error').style.display = 'flex'
+      return;
+    }
+    else {
+      document.getElementById('empty_works_error').style.display = 'none'
+    }
+    $.ajax({
+        url: '/api/v1/create_pdf',
+        type: 'POST',
+        traditional: true,
+        //contentType: "application/json; charset=utf-8",
+        dataType: 'json',
+        //async: false,
+        data: ({
+          works: works,
+          client_name: client_name,
+          client_itn: client_itn,
+          final_price: final_price,
+          bd_receiver: bd_receiver,
+          bd_bank_receiver: bd_bank_receiver,
+          bd_tin: bd_tin,
+          bd_iec: bd_iec,
+          bd_purpose_of_payment: bd_purpose_of_payment,
+          bd_bic: bd_bic,
+          bd_check_account: bd_check_account,
+          bd_cor_account: bd_cor_account,
+          signing_person: bd_signing,
+          is_discount: is_discount,
+          is_fixed: is_fixed,
+          recalculation_value: recalculation_value,
+          payer_info: payer_info
+        }),
+        success: function (data) {
+            console.log(data);
+            // var win = window.open();
+            // observable.subscribe(data.pdf => win.location.href = data.pdf);
+            // win.focus();
+            $('<a href="' + data.pdf + '" target="_blank">&nbsp;</a>')[0].click();
+        },
+        error: function (req, status, error) {
+        var msg = '';
+        console.log('ошибка');
+    },
+    })
+  }
+  function get_time(time) {
+    let hours = parseInt(time)
+    var today = new Date;
+
+    let minutes = parseFloat(time) - hours
+    let minute = minutes * 60
+
+    if (hours   < 10) {hours   = "0"+String(hours);}
+    if (minute < 10) {minute = "0"+String(minutes);}
+    let new_time = hours + ':' + minute
+
+    return(new_time)
+  }
+  function get_select_works() {
+    let divchics = document.getElementsByClassName("divchik");
+    let works = []
+    workss = ''
+    for (let i of divchics) {
+      console.log(i);
+    hours = i.getElementsByClassName('div-block-678')[0].getElementsByClassName('div-block-671')[0].getElementsByClassName('signup-field-2 _14 w-input')[0].value
+    count = i.getElementsByClassName('div-block-678')[0].getElementsByClassName('div-block-671')[1].getElementsByClassName('signup-field-2 _14 w-input')[0].value
+    price = parseFloat(i.getElementsByClassName('div-block-678')[0].getElementsByClassName('div-block-671')[2].getElementsByClassName('signup-field-2 _14 locked w-input')[0].value)
+    specialist = i.getElementsByClassName('div-block-677')[0].getElementsByClassName('div-block-671 spec')[0].getElementsByClassName('select-field spec w-select')[0]
+    //console.log(specialist_type);
+    specialist_type = specialist.options[specialist.selectedIndex].id
+    try {
+    name = i.getElementsByClassName('div-block-676')[0].getElementsByClassName('div-block-671 vid')[0].getElementsByClassName('select-field spec w-select')[0].value }
+    catch(e) {
+      name = i.getElementsByClassName('div-block-676')[0].getElementsByClassName('div-block-671 vid')[0].getElementsByClassName('signup-field-2 _50 _2 w-input')[0].value
+    }
+    number = i.getElementsByClassName('div-block-676')[0].getElementsByClassName('div-block-671 number')[0].getElementsByClassName('signup-field-2 _14 locked w-input')[0].value
+    let work = { 'hours': hours, 'count': count, 'price': price, 'specialistID': specialist_type, 'name': name, 'number': number}
+    console.log(works);
+    works.push(work)
+    workss = JSON.stringify(works)
+
+  }
+
+  return(workss)
+}
+function delete_element(element) {
+  console.log(element.parentElement.parentElement);
+  element.parentElement.parentElement.remove();
+  categories_obj.y = categories_obj.y - 1
+  rate_price();
+  nazenka();
+  let works = get_select_works();
+  console.log(works);
+  if (works == '') {
+    console.log('ff');
+    document.getElementById('blank_alert').style.display = 'flex'
+    document.getElementById('clear_list').style.display = 'none'
+  }
+}
+function change_number() {
+let divchics = document.getElementsByClassName("divchik");
+let  t = 1
+  for (let i of divchics) {
+    i.getElementsByClassName('div-block-676')[0].getElementsByClassName('div-block-671 number')[0].getElementsByClassName('signup-field-2 _14 locked w-input')[0].value = t;
+    i.getElementsByClassName('div-block-676')[0].getElementsByClassName('div-block-671 number')[0].getElementsByClassName('signup-field-2 _14 locked w-input')[0].id = 'num'+t;
+    t = t + 1
+  }
+}
+function time_to_float(time){
+  let hours = parseInt(time.split(':')[0])
+  let minute = parseFloat(time.split(':')[1] / 60)
+  let new_time = hours + minute
+
+  return(new_time)
+}
+function change_stavka(i) {
+  console.log(i)
+  categories_obj.specialists.forEach(function(e) {
+    console.log(e);
+    console.log(i.target.name);
+    if (e.name == i.target.value) {
+      console.log('sf');
+      i.target.parentElement.parentElement.getElementsByClassName('div-block-671 stavka')[0].getElementsByClassName('signup-field-2 _14 w-input')[0].value = e.rate
+      //i.getElementsByClassName('div-block-677')[0].getElementsByClassName('div-block-671 stavka')[0].getElementsByClassName('signup-field-2 _14 w-input')[0].value
+    }
+  })
+}
+function create_dop_uslug() {
+  let work = [{'name': '', 'hours': 1, 'count': 1, 'id':categories_obj.id, 'specialist_type': {'rate': 0}}]
+  categories_obj.id = categories_obj.id + 1
+  create_work_element(work, 'input', 'signup-field-2 _50 _2 w-input')
+  document.getElementById('blank_alert').style.display = 'none'
+  document.getElementById('clear_list').style.display = 'flex'
+}
+function check_pos(event, elem) {
+  //var rect = el.getBoundingClientRect();
+  divwork10554
+  elem_number = elem.parentNode.parentNode.getElementsByClassName('div-block-676')[0].getElementsByClassName('div-block-671 number')[0].getElementsByClassName('signup-field-2 _14 locked w-input')[0].value
+  next_nunber = parseInt(elem_number)+1
+  console.log('num'+String(next_nunber));
+  var nex_elem = document.getElementById('num'+String(next_nunber)).parentNode.parentNode.parentNode
+  var next_element = document.getElementsByClassName('divchik')
+  for (let i of next_element) {
+    if (i.id == nex_elem.id) {
+      new_elem = i
+    }
+  }
+  console.log(elem.parentNode.parentNode.parentNode);
+  var test = elem.parentNode.parentNode.parentNode.insertBefore(new_elem,elem.parentNode.parentNode);
+
+  change_number()
+
+}
+function to_up(event, elem) {
+  divwork10554
+  elem_number = elem.parentNode.parentNode.getElementsByClassName('div-block-676')[0].getElementsByClassName('div-block-671 number')[0].getElementsByClassName('signup-field-2 _14 locked w-input')[0].value
+  next_nunber = parseInt(elem_number)-1
+  console.log('num'+String(next_nunber));
+  var nex_elem = document.getElementById('num'+String(next_nunber)).parentNode.parentNode.parentNode
+  var next_element = document.getElementsByClassName('divchik')
+  for (let i of next_element) {
+    if (i.id == nex_elem.id) {
+      new_elem = i
+    }
+  }
+  console.log(elem.parentNode.parentNode.parentNode);
+  var test = elem.parentNode.parentNode.parentNode.insertBefore(elem.parentNode.parentNode, new_elem);
+
+  change_number()
+}
+  function create_work_element(works, input_vid='select',select_class='select-field spec w-select') {
+    console.log(input_vid)
+    var sel = document.getElementById('form-wrapper');
+   works.forEach(function(e){
+
+   opt = document.createElement('div')
+   div676 = document.createElement('div')
+   div676.className = 'div-block-676'
+   div677 = document.createElement('div')
+   div677.className = 'div-block-677'
+   div678 = document.createElement('div')
+   div678.className = 'div-block-678'
+   div675 = document.createElement('div')
+   div675.className = 'div-block-675'
+   div671_number = document.createElement('div')
+   div671_number.className = 'div-block-671 number'
+   label_number = document.createElement('label')
+   label_number.className = 'signup-label'
+   strong_number = document.createElement('strong')
+   strong_number.className = 'bold-text-4'
+   strong_number.textContent = '№'
+   input_number = document.createElement('input')
+   input_number.defaultValue = categories_obj.y
+   input_number.className = 'signup-field-2 _14 locked w-input'
+   input_number.setAttribute("disabled", "true");
+   input_number.id = 'num'+categories_obj.y
+   div671_vid = document.createElement('div')
+   div671_vid.className = 'div-block-671 vid'
+   label_vid = document.createElement('label')
+   label_vid.className = 'signup-label'
+   strong_vid = document.createElement('strong')
+   strong_vid.className = 'bold-text-4'
+   strong_vid.textContent = 'Вид'
+   select_vid = document.createElement(input_vid)
+   select_vid.className = select_class
+   select_vid.id = 'work' + e.id + categories_obj.y
+
+   div671_cpec = document.createElement('div')
+   div671_cpec.className = 'div-block-671 spec'
+   label_spec = document.createElement('label')
+   label_spec.className = 'signup-label'
+   strong_spec = document.createElement('strong')
+   strong_spec.className = 'bold-text-4'
+   strong_spec.textContent = 'Специалист'
+   select_spec = document.createElement('select')
+   select_spec.className = 'select-field spec w-select'
+   select_spec.id = 'spec' + e.id + categories_obj.y
+   select_spec.addEventListener('click', change_stavka)
+   select_spec.addEventListener('click', change_rate)
+   select_spec.addEventListener('click', nazenka)
+   div671_stavka = document.createElement('div')
+   div671_stavka.className = 'div-block-671 stavka'
+   label_stavka = document.createElement('label')
+   label_stavka.className = 'signup-label'
+   strong_stavka = document.createElement('strong')
+   strong_stavka.className = 'bold-text-4'
+   strong_stavka.textContent = 'Ставка'
+   input_stavka = document.createElement('input')
+   input_stavka.className = 'signup-field-2 _14 w-input'
+   input_stavka.defaultValue = e.specialist_type.rate
+   //input_stavka.addEventListener('keyup', rate_price)
+   input_stavka.addEventListener('keyup', change_rate)
+   input_stavka.addEventListener('keyup', nazenka)
+   label_stavka.appendChild(strong_stavka)
+   div671_stavka.appendChild(label_stavka)
+   div671_stavka.appendChild(input_stavka)
+   label_spec.appendChild(strong_spec)
+   div671_cpec.appendChild(label_spec)
+   div671_cpec.appendChild(select_spec)
+   label_number.appendChild(strong_number)
+   div671_number.appendChild(label_number)
+   div671_number.appendChild(input_number)
+   div676.appendChild(div671_number)
+   div677.appendChild(div671_cpec)
+   div677.appendChild(div671_stavka)
+   label_vid.appendChild(strong_vid)
+   div671_vid.appendChild(label_vid)
+   div671_vid.appendChild(select_vid)
+   div676.appendChild(div671_vid)
+   div671 = document.createElement('div')
+   div671.className = 'div-block-671'
+   label = document.createElement('label')
+   label.className = 'signup-label'
+   strong = document.createElement('strong')
+   strong.className = 'bold-text-4'
+   strong.textContent = 'Часы'
+   input = document.createElement('input')
+   input.className = 'signup-field-2 _14 w-input'
+   input.defaultValue = get_time(e.hours)
+   //input.addEventListener('keyup', rate_price)
+   input.addEventListener('keyup', change_rate)
+   input.addEventListener('keyup', nazenka)
+   label.appendChild(strong)
+   div671.appendChild(label)
+   div671.appendChild(input)
+   div678.appendChild(div671)
+   div671 = document.createElement('div')
+   div671.className = 'div-block-671'
+   label = document.createElement('label')
+   label.className = 'signup-label'
+   strong = document.createElement('strong')
+   strong.className = 'bold-text-4'
+   strong.textContent = 'Количество'
+   input = document.createElement('input')
+   input.className = 'signup-field-2 _14 w-input'
+   input.defaultValue = e.count
+   //input.addEventListener('keyup', rate_price)
+   input.addEventListener('keyup', change_rate)
+   input.addEventListener('keyup', nazenka)
+   label.appendChild(strong)
+   div671.appendChild(label)
+   div671.appendChild(input)
+   div678.appendChild(div671)
+   div671 = document.createElement('div')
+   div671.className = 'div-block-671'
+   label = document.createElement('label')
+   label.className = 'signup-label'
+   strong = document.createElement('strong')
+   strong.className = 'bold-text-4'
+   strong.textContent = 'Стоимость'
+   input = document.createElement('input')
+   input.className = 'signup-field-2 _14 locked w-input'
+   input.id = 'rate'
+   input.name = 'rate'
+   input.defaultValue = e.count * e.specialist_type.rate * e.hours
+   input.setAttribute("disabled", "true");
+   label.appendChild(strong)
+   div671.appendChild(label)
+   div671.appendChild(input)
+   div678.appendChild(div671)
+   a_down = document.createElement('a')
+   a_up = document.createElement('a')
+   a_delete = document.createElement('a')
+   a_down.className = 'func down w-button'
+   a_up.className = 'func up w-button'
+   a_down.setAttribute("onclick", "check_pos(event,this)")
+   a_up.setAttribute("onclick", "to_up(event,this)")
+   a_down.id = 'target'
+   //a_down.style.position = 'absolute';
+   a_delete.className = 'func delete w-button'
+   a_delete.id = 'delete_element'
+   a_delete.setAttribute("onclick", "delete_element(this)");
+   a_delete.addEventListener('click', change_number)
+   div675.appendChild(a_down)
+   div675.appendChild(a_up)
+   div675.appendChild(a_delete)
+   opt.appendChild(div676)
+   opt.appendChild(div677)
+   opt.appendChild(div678)
+   opt.appendChild(div675)
+   opt.className = 'divchik'
+   opt.id = 'div'+select_vid.id
+   //opt.style.position = 'absolute'
+   sel.appendChild(opt)
+   fill_works(select_vid.id, e.name, categories_obj.y);
+   fill_specialist(select_spec.id, e.specialist_type.name, e.specialist_type.id);
+   rate_price();
+   change_nazenka('Фиксированная', 0)
+   //change_rate();
+   nazenka();
+   categories_obj.y = categories_obj.y + 1
+ })
+
+  }
+  function reload_page() {
+
+     sessionStorage.setItem('client_name', '');
+     sessionStorage.setItem('client_itn', '');
+     sessionStorage.setItem('bd_receiver', '');
+     sessionStorage.setItem('bd_bank_receiver', '');
+     sessionStorage.setItem('bd_tin', '');
+     sessionStorage.setItem('bd_iec', '');
+     sessionStorage.setItem('bd_purpose_of_payment', '');
+     sessionStorage.setItem('bd_bic', '');
+     sessionStorage.setItem('bd_check_account', '');
+     sessionStorage.setItem('bd_cor_account', '');
+     sessionStorage.setItem('bd_signing', '')
+         location.reload();
+  }
+  </script>
+</body>
+</html>
