@@ -16,6 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework_swagger.views import get_swagger_view
+from django.conf import settings
+from django.conf.urls.static import static
 #from .swagger_schema import SwaggerSchemaView
 
 schema_view = get_swagger_view(title='Юр.Прайс API')
@@ -25,6 +27,8 @@ urlpatterns = [
     path('', include('web_page.urls')),
     path('api/v1/', include('category.urls')),
 ]
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 from django.contrib import admin
 
 admin.site.site_header = 'Панель Администратора'                    # default: "Django Administration"

@@ -78,12 +78,12 @@ LANGUAGE_CODE = 'ru-RU'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
 
 
 # Password validation
@@ -109,7 +109,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'UTC+3'
 
 USE_I18N = True
 
@@ -122,12 +122,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static_price/'
-
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static_price'),
-)
-
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static_price')
+STATICFILES_DIRS = os.path.join(BASE_DIR, 'static_price'),
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static_price')
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
