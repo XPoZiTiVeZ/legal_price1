@@ -23,10 +23,11 @@ print(BASE_DIR)
 SECRET_KEY = '4@i8ovd86&z^%)38hiy65s@oq1x#h5*@(uv+v14lgoa&$g!pt6'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['134.0.119.114', 'lexprice.ru', '*']
+ALLOWED_HOSTS = ['127.0.0.1', '213.108.4.42', 'lexprice.ru']
 
+CSRF_TRUSTED_ORIGINS = ['http://lexprice.ru','http://213.108.4.42','https://lexprice.ru','https://213.108.4.42']
 
 # Application definition
 
@@ -122,8 +123,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static_price/'
-STATICFILES_DIRS = os.path.join(BASE_DIR, 'static_price'),
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build', 'static_price')
+# STATICFILES_DIRS = os.path.join(BASE_DIR),
+STATIC_ROOT = os.path.join(BASE_DIR, 'static_price')
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
