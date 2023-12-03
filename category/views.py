@@ -108,7 +108,10 @@ class PDFApi(APIView):
         pdf = create_pdf(excel, client_name, client_itn, final_price, bd_receiver, bd_bank_receiver, bd_tin, bd_iec, bd_purpose_of_payment, bd_bic, bd_check_account, bd_cor_account, bd_signing, is_discount, is_fixed, recalculation_value, payer_info)
         print(pdf)
         host = request.get_host()
-        return Response({'pdf': f'https://{host}{pdf}'})
+        if request.is_secure():
+            return Response({'pdf': f'https://{host}{pdf}'})
+        else:
+            return Response({'pdf': f'http://{host}{pdf}'})
 
 # Create your views here.
 
